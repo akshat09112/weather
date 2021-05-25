@@ -23,5 +23,5 @@ function getWeather(){
 function showResults(data){
     return "<p>Temperature: "+data.main.temp+" &deg;C</p>"+"<p>Pressure: "+data.main.pressure+"</p>"+
     "<p>Humidity: "+data.main.humidity+"</p>"+"<p>Min Temperature: "+data.main.temp_min+"</p>"+
-    "<p>Max Temperature: "+data.main.temp_max+"</p>"+"<p>Wind Speed: "+data.wind.speed+"</p>";
+    "<p>Max Temp: "+data.main.temp_max+"</p>"+"<p>Wind Speed: "+data.wind.speed+"</p>";
 }
