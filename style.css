@@ -37,18 +37,20 @@ body{
     width: 100%;
     height: 450px;
     margin-top: 0px;
+    margin-left: 0px;
 }
 
 #colHeadText1{
     color: white;
     padding-top: 30px;
-    font-size: 50px;
+    font-size: 45px;
 }
 
 #colHeadText2{
     color: white;
     padding-top: 20px;
     padding-bottom: 30px;
+    font-size: 50px;
 }
 
 ul#list_item{
@@ -71,4 +73,82 @@ input[type="text"]{
 #submitCity{
     height: 40px;
     font-weight: bold;
+    margin-top: 10px;
+}
+
+#errorCity{
+    width: 50%;
+    margin: auto;
+    text-align: center;
+}
+.footer{
+    background-color: #4aa1f3;
+    width: 100%;
+    height: 80px;
+    
+}
+
+#showWeather{
+    width: 60%;
+    margin: auto;
+    background-color: yellowgreen;
+    color: white;
+    border-radius: 25px;
+}
+
+td{
+    white-space: nowrap;
+    background: #fab ;
+    text-align: center;
+    font-size: 18px;
+}
+
+table{
+    color: #333333;
+    font-family: Helvetical, Arial,sans-serif;
+}
+
+th{
+    background: #4aa1f3;
+    font-weight: bold;
+    font-size: 18px;
+    color: white;
+}
+
+#welcome-paragraph{
+    font-size: 20px;
+    font-weight: normal;
+    padding: 12px 25px 40px 25px;
+    letter-spacing: 0.5px;
+}
+
+#rowDiv{
+    margin: auto;
+    width: 100%;
+}
+
+#colDesc h3{
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 20px;
+    text-transform: uppercase;
+}
+
+#colDesc{
+    border: 1px solid #e7e7e7;
+    margin:0 auto;
+    height: auto;
+}
+
+.info-icon{
+    text-align: center;
+
+}
+
+.info-icon i{
+    font-size: 60px;
+    font-family: "font-awesome";
+    margin-top: 10px;
+    color: #4aa1f3;
+
 }

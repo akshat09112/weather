@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Weather app</title>
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/@fortawesome/fontawesome-free@5.15.3/css/fontawesome.min.css" integrity="sha384-wESLQ85D6gbsF459vf1CiZ2+rr+CsxRY0RpiF1tLlQpDnAgg6rwdsUF1+Ics2bni" crossorigin="anonymous">
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
@@ -34,19 +36,90 @@
     </nav>
     <div class="row" id="headRow">
         <div class="col-md-12" id="colText">
-            <h2 class="text-center" id="colHeadText1">The most simplest weather app. Its simple.</h2>
-            <h1 class="text-center" id="colHeadText2">Get weather information of any city.</h1>
+            <h2 class="text-center" id="colHeadText1"></h2>
+            <h1 class="text-center" id="colHeadText2"></h1>
             <ul class="list-inline" id="list_item">
-                <li>Temperature</li>
-                <li>Pressure</li>
-                <li>Windspeed</li>
-                <li>Humidity</li>
+                <li id="list1"></li>
+                <li id="list2"></li>
+                <li id="list3"></li>
+                <li id="list4"></li>
             </ul>
         </div>
     </div>
-
+    <div class="container" style="margin-bottom: 70px;">
+        <div class="row">
+            <div class="col-md-12">
+                <h2 class="text-center text-primary" id="welcome" style="margin-top:40px">Welcome to Akshat's Weather App</h2>
+                <p class="text-center" id="welcome-paragraph">Weather app is a web-based application that allows users to search for current weather information as well as weather forecast of different cities around the world. Users can search for weather information by city name. Weather app uses the openweathermap API which is found at www.openweathermap.org</p>
+            </div>
+        </div>
+        <div class="row" id="rowDiv">
+            <div class="col-md-4" id="colDesc">
+                <div class="info-icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+                <h3 class="text-center">Weather API</h3>
+                <p class="text-center">Use openweathermap API to get weather information of any city.</p>
+            </div>
+            <div class="col-md-4" id="colDesc">
+                <div class="info-icon"><i class="fa fa-search" aria-hidden="true"></i></div>
+                <h3 class="text-center">Search</h3>
+                <p class="text-center">Search for current weather information and weather forecast.</p>
+            </div>
+            <div class="col-md-4" id="colDesc">
+                <div class="info-icon"><i class="fa fa-chevron-circle-down" aria-hidden="true"></i></div>
+                <h3 class="text-center">View Result</h3>
+                <p class="text-center">Get information about temperature, pressure, humidity etc.</p>
+            </div>
+        </div>
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="row text-center" style="padding-top: 30px;">
+                <p style="color:white">Copyright &copy; Weather App</p>
+            </div>
+        </div>
+    </div>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
-    <script src="weather.js"></script>
+    <script src="typed.js"></script>
+    <script>
+    $(document).ready(function(){
+        setTimeout(function(){
+            $("#colHeadText1").typed({
+                strings: ["The most simplest weather app. Its simple."],
+                typeSpeed: 40
+            });
+        }, 0);
+        setTimeout(function(){
+            $("#colHeadText2").typed({
+                strings: ["Get weather information of any city."],
+                typeSpeed: 50
+            });
+        }, 2000);
+        setTimeout(function(){
+            $("#list1").typed({
+                strings: ["Temperature"],
+                typeSpeed: 60
+            });
+        }, 4000);
+        setTimeout(function(){
+            $("#list2").typed({
+                strings: ["Pressure"],
+                typeSpeed: 60
+            });
+        }, 6000);
+        setTimeout(function(){
+            $("#list3").typed({
+                strings: ["Wind Speed"],
+                typeSpeed: 60
+            });
+        }, 8000);
+        setTimeout(function(){
+            $("#list4").typed({
+                strings: ["Humidity"],
+                typeSpeed: 60
+            });
+        }, 10000);
+    });    
+    </script>
 </body>
 </html>
