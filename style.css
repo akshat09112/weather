@@ -87,7 +87,9 @@ input[type="text"]{
     height: 80px;
     
 }
-
+.dev{
+    color: red;
+}
 #showWeather{
     width: 60%;
     margin: auto;
